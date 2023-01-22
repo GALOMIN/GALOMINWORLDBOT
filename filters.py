@@ -1,5 +1,9 @@
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
+from dotenv import load_dotenv, find_dotenv
+
+# Find .env file
+load_dotenv(find_dotenv())
 
 class IsAdminFilter(BoundFilter):
     key = "is_admin"
