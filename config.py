@@ -1,3 +1,7 @@
+from dotenv import load_dotenv, find_dotenv
+
+# Find .env file
+load_dotenv(find_dotenv())
 TOKEN = '5961429383:AAESEaDzkFL7aMEtHzMKxdc6FiBGU7s5ZI4'
 
 CHANNEL_URL = 'https://t.me/GalWorld'
