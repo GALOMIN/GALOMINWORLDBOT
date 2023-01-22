@@ -2,9 +2,13 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 import filters
 from filters import IsAdminFilter
+from dotenv import load_dotenv, find_dotenv
 
 import config as cfg
 import markups as nav
+
+# Find .env file
+load_dotenv(find_dotenv())
 
 logging.basicConfig(level=logging.INFO)
 
